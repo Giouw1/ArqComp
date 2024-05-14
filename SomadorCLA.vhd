@@ -88,5 +88,5 @@ SOMA: FOR N IN 31 DOWNTO 0 GENERATE
 	S_o(N) <= (A_i(N) XOR ((B_i(N)) XOR mode_i) XOR C(N));
 end generate SOMA;
 
-
+-- Download no Quartus 20.1 e no ModelIsim20.1
 END TypeArchitecture;

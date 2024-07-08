@@ -33,7 +33,7 @@ BEGIN
     P(N)    <= (A_i(N) XOR (B_i(N) XOR mode_i));
   END GENERATE CARRIES_E_SUB;
   
-  C(0) <= mode_i;
+  C(0) <= '0' when (mode_i = '0') else '1' when (mode_i = '1';
   C(1) <= (G(0) OR (P(0) AND C(0)));
   C(2) <= (G(1) OR (P(1) AND C(1)));
   C(3) <= (G(2) OR (P(2) AND C(2)));
